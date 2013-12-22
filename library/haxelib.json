@@ -1,0 +1,11 @@
+{
+  "name": "winapi",
+  "license": "LGPL",
+  "tags": ["windows","neko"],
+  "description": "Some winapi calls for the neko platform.",
+  "contributors": ["yar3333"],
+  "releasenote": "Getting fonts informmations.",
+  "version": "1.0.0",
+  "url": "https://bitbucket.org/yar3333/haxe-winapi",
+  "dependencies": {}
+}
