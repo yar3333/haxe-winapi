@@ -10,7 +10,7 @@ typedef FontStyles =
 	var boldItalic : Bool;
 }
 
-class Font
+class Fonts
 {
 	public static function getFaces() : Array<String>
 	{
