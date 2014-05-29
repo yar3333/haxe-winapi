@@ -28,6 +28,7 @@ LDFLAGS=-shared
 ifeq ($(PLATFORM), $(filter $(PLATFORM), Windows Windows64))
 	CCFLAGS+= -I$(NEKOPATH)\include
 	LDFLAGS+= $(NEKOPATH)\neko.dll
+	CCFLAGS+= -D _WINDOWS
 else
 	ifeq ($(PLATFORM), Linux64)
 		CCFLAGS+= -fPIC
