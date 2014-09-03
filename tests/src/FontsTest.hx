@@ -1,16 +1,16 @@
 package;
 
-import neko.winapi.Font;
+import neko.winapi.Fonts;
 
-class FontTest extends haxe.unit.TestCase
+class FontsTest extends haxe.unit.TestCase
 {
     public function testBasic()
     {
-		var faces = Font.getFaces();
+		var faces = Fonts.getFaces();
 		
 		for (face in faces)
 		{
-			var styles = Font.getStyles(face);
+			var styles = Fonts.getStyles(face);
 			print(face + "\n");
 			print(
 				"\t" 
@@ -24,5 +24,4 @@ class FontTest extends haxe.unit.TestCase
 		
 		this.assertTrue(true);
     }
-    
 }
