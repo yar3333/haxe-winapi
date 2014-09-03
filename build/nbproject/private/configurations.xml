@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="89">
+<configurationDescriptor version="94">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
-    <df root="src" name="src">
+    <df root="src" name="0">
       <in>font.cpp</in>
+      <in>registry.cpp</in>
     </df>
   </logicalFolder>
   <projectmakefile></projectmakefile>

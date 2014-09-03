@@ -1,5 +1,3 @@
-#pragma GCC diagnostic ignored "-fpermissive"
-
 #include <windows.h>
 #include <neko.h>
 #include <stdio.h>
@@ -34,7 +32,7 @@ value get_faces()
 {
     FontFaces faces;
 	faces.count = 0;
-	faces.data = malloc(0);
+	faces.data = (value*)malloc(0);
 	EnumFontFamilies(GetDC(NULL), NULL, (FONTENUMPROC)enumFontFamProc_get_faces, (LPARAM)&faces); 
 	return arrayToValue(faces.count, faces.data);
 }
@@ -58,7 +56,7 @@ BOOL CALLBACK enumFontFamProc_get_faces(LPENUMLOGFONT lpelf, LPNEWTEXTMETRIC lpn
 { 
 	if (lpelf->elfLogFont.lfFaceName[0] != '@')
 	{
-		pFontFaces->data = realloc(pFontFaces->data, (pFontFaces->count + 1) * sizeof(pFontFaces->data[0]));
+		pFontFaces->data = (value*)realloc(pFontFaces->data, (pFontFaces->count + 1) * sizeof(pFontFaces->data[0]));
 		pFontFaces->data[pFontFaces->count] = alloc_string(lpelf->elfLogFont.lfFaceName);
 		pFontFaces->count++;
 	}
