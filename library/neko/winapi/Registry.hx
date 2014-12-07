@@ -17,9 +17,9 @@ class Registry
 	public static var HKEY_CURRENT_CONFIG(default, null) = new HKEY(0x80000005);
 	public static var HKEY_DYN_DATA(default, null) = new HKEY(0x80000006);
 	
-	public static function createKey(parent:HKEY, name:String) : Bool
+	public static function createKey(globalKey:HKEY, name:String) : Bool
 	{
-		return Lib.nekoToHaxe(registry_createKey(parent, Lib.haxeToNeko(name)));
+		return Lib.nekoToHaxe(registry_createKey(globalKey, Lib.haxeToNeko(name)));
 	}
 	
 	public static function getKeyValueString(globalKey:HKEY, path:String, name:String) : String
