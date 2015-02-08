@@ -1,4 +1,4 @@
-package neko.winapi;
+package winapi;
 
 import neko.Lib;
 
