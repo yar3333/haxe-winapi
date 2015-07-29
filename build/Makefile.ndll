@@ -39,10 +39,10 @@ endif
 
 build: $(OBJ_FILES)
 	mkdir -p $(dir $(OUT))
-ifneq ($(strip $(C_FILES)),)
-	$(CC) $(OBJ_FILES) $(LDFLAGS) -o $(OUT)
-else
+ifneq ($(strip $(CPP_FILES)),)
 	$(CP) $(OBJ_FILES) $(LDFLAGS) -o $(OUT)
+else
+	$(CC) $(OBJ_FILES) $(LDFLAGS) -o $(OUT)
 endif
 
 $(OBJ_FILES): | $(OBJ_DIR)
