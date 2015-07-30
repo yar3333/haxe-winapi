@@ -4,8 +4,8 @@
   "tags": ["windows","neko"],
   "description": "Some winapi calls for the neko platform.",
   "contributors": ["yar3333"],
-  "releasenote": "Getting fonts informmations.",
-  "version": "1.0.0",
+  "releasenote": "README fix.",
+  "version": "1.0.1",
   "url": "https://bitbucket.org/yar3333/haxe-winapi",
   "dependencies": {}
 }
