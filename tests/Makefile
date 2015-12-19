@@ -1,2 +1,2 @@
-include Makefile.platform
-include Makefile.test
+include Makefile-platform
+include Makefile-test
