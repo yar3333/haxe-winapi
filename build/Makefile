@@ -1,5 +1,5 @@
-include Makefile.platform
-include Makefile.ndll
+include Makefile-platform
+include Makefile-ndll
 
 PROJECT=winapi
 
