@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="94">
+<configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
-    <df root="src" name="0">
-      <in>font.cpp</in>
-      <in>registry.cpp</in>
-    </df>
+    <logicalFolder name="src" displayName="src" projectFiles="true">
+      <itemPath>src/font.cpp</itemPath>
+      <itemPath>src/registry.cpp</itemPath>
+    </logicalFolder>
   </logicalFolder>
   <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
   <sourceRootList>
