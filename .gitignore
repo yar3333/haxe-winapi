@@ -1,5 +1,4 @@
-syntax: glob
 bin
 build/obj
-library.zip
+library/library.zip
 build/nbproject/private/

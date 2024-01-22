@@ -5,11 +5,7 @@
 ####################################################
 
 ifeq ($(OS),Windows_NT)
-	ifeq ($(PROCESSOR_ARCHITECTURE),AMD64)
-		PLATFORM=Windows64
-	else
-		PLATFORM=Windows
-	endif
+	PLATFORM=Windows
 else
     ifeq ($(shell uname -s),Linux)
 		ifeq ($(shell getconf LONG_BIT),64)

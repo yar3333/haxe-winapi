@@ -25,11 +25,12 @@ OUT=../library/ndll/$(PLATFORM)/$(PROJECT).ndll
 CCFLAGS=-shared
 LDFLAGS=-shared
 
-ifeq ($(PLATFORM), $(filter $(PLATFORM), Windows Windows64))
+ifeq ($(PLATFORM), Windows)
 	CCFLAGS+= -I$(NEKOPATH)\include
 	LDFLAGS+= $(NEKOPATH)\neko.dll
 	CCFLAGS+= -D _WINDOWS
 	LDFLAGS+= -static-libgcc -static-libstdc++
+	CCFLAGS+= -m64
 else
 	ifeq ($(PLATFORM), Linux64)
 		CCFLAGS+= -fPIC
